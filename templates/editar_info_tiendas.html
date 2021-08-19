@@ -1,0 +1,39 @@
+{% extends 'base_layout.html' %}
+<!---->
+{% block content %}
+
+<link rel="stylesheet" type="text/css" href="../static/editar_info_enlaces.css">
+
+<h3 class="titulo">Peludot@s - Edición Registro Tiendas</h3>
+
+<div class="reg-mascota-box">
+    <img src="../static/images/logo.jpg" class="avatar" alt="Avatar Image">
+    <h1>Editar Registro</h1>
+
+    <form action="/update/{{item.0}}" method="POST" enctype="multipart/form-data">
+
+        <label for="Departamento">Departamento</label>
+        <input type="text" name="departamento" value="{{ item.1 }}">
+
+        <label for="Ciudad">Ciudad</label>
+        <input type="text" name="ciudad" value="{{ item.2 }}">
+
+        <label for="Nombre de Tienda">Nombre de la Tienda</label>
+        <input type="text" name="nombre" placeholder="Ingresar nombre de la Tienda" value="{{ item.3 }}">
+
+        <label for="Horario">Horario</label>
+        <input type="text" name="horario" placeholder="Horario" value="{{ item.4 }}">
+
+        <label for="Direccion">Direccion</label>
+        <input type="text" name="direccion" placeholder="Direccion" value="{{ item.5 }}">
+
+        <label for="Telefono">Telefono</label>
+        <input type="text" name="telefono" placeholder="Telefono" value="{{ item.6 }}">
+
+        <label for="Email">Email</label>
+        <input type="email" name="email" placeholder="Email" value="{{ item.7 }}">
+
+        <input type="submit" value="Editar">
+    </form>
+</div>
+{% endblock %}

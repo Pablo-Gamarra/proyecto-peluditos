@@ -1,0 +1,17 @@
+.contacto {
+    width: 650px;
+    height: 300px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    margin-top: 200px;
+    background-color: rgb(19, 128, 37);
+    font-size: x-large;
+    padding-top: 50px;
+    color: #fff;
+    text-align: center;
+}
+
+.ul {
+    list-style: none;
+}

@@ -1,0 +1,48 @@
+{% extends 'base_layout.html' %}
+<!---->
+{% block content %}
+
+<link rel="stylesheet" type="text/css" href="../static/adopcion_mascotas.css">
+
+<h3 class="titulo">Peludit@s - Adopción Responsable</h3>
+
+{% with messages = get_flashed_messages() %}
+<!---->
+{% if messsages %}
+<!---->
+{% for message in messages %}
+<p>{{ message }}</p>
+{% endfor %}
+<!---->
+{% endif %}
+<!---->
+{% endwith %}
+
+<div class="reg-mascota-box">
+    <img src="../static/images/logo.jpg" class="avatar" alt="Avatar Image">
+    <h1>Datos de Contacto</h1>
+
+    <form action="/eliminar_mascota/{{registro.0}}" method="POST" enctype="multipart/form-data">
+
+        <label for="Departamento">Departamento</label>
+        <input type="text" name="departamento" value="{{ registro.2 }}">
+
+        <label for="Ciudad">Ciudad</label>
+        <input type="text" name="ciudad" value="{{ registro.3 }}">
+
+        <label for="Especie">Especie</label>
+        <input type="text" name="especie" value="{{ registro.4 }}">
+
+        <label for="Nombre de Mascota">Nombre de tu futura mascota</label>
+        <input type="text" name="nombre" placeholder="Ingresar nombre de la mascota" value="{{ registro.5 }}">
+
+        <label for="Email">Email de Contacto</label>
+        <input type="email" name="email" placeholder="Email" value="{{ registro.9 }}">
+
+        <label for="Celular">Télefono Móvil de Contacto</label>
+        <input type="text" name="telefono" value="{{ registro.10 }}" placeholder="Télefono Móvil">
+
+        <input type="submit" value="Confirmar Adopción">
+    </form>
+</div>
+{% endblock %}

@@ -1,0 +1,40 @@
+ {% extends 'base_layout.html' %}
+<!---->
+{% block content %}
+
+<link rel="stylesheet" type="text/css" href="../static/chat_usuarios.css">
+
+<h3 class="titulo">Peludit@s - Chat Usuarios</h3>
+
+<div class="card" style="width: 30rem;">
+
+    <div class="card-body">
+        <h5 class="card-title"></h5>
+        <p class="card-text"></p>
+
+        <ul id="messages"></ul>
+        <input type="text" id="myMessage">
+        <button type="button" class="btn btn-success" id="send">Enviar</button>
+
+        <!-- CDN JQuery-->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+        </script>
+
+        <!--CDN Socketio-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js" charset="utf-8"></script>
+
+        <script class="contenido">
+            const socket = io();
+
+            socket.on('message', function(msg) {
+                $('#messages').append('<li>' + msg + '<li>')
+            })
+
+            $('#send').on('click', function() {
+                socket.send($('#myMessage').val());
+                $('#myMessage').val('');
+            })
+        </script>
+    </div>
+</div>
+{% endblock %}

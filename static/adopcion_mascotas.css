@@ -1,0 +1,107 @@
+#texto1 {
+    margin-top: 5px;
+    padding-top: 20px;
+    padding-right: 15px;
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+}
+
+#texto2 {
+    margin-top: 10px;
+    padding-left: 5px;
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+}
+
+#texto3 {
+    padding-left: 95px;
+    padding-top: 10px;
+    font-size: 24px;
+    text-align: center;
+    color: #fff;
+}
+
+.reg-mascota-box {
+    float: right;
+    width: 500px;
+    height: 700px;
+    margin-top: 200px;
+    padding-top: 50px;
+    margin-right: 00px;
+    background: rgb(238, 235, 84);
+    color: #000;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+
+.reg-mascota-box .avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+
+.reg-mascota-box h1 {
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 28px;
+}
+
+.reg-mascota-box label {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+}
+
+.reg-mascota-box input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.reg-mascota-box input[type="text"],
+.reg-mascota-box input[type="email"] {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #000;
+    font-size: 16px;
+}
+
+.reg-mascota-box input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #b80f22;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.reg-mascota-box input[type="submit"]:hover {
+    cursor: pointer;
+    background: #f5cb4e;
+    color: #000;
+}
+
+.reg-mascota-box a {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: #000;
+}
+
+.reg-mascota-box a:hover {
+    color: #fff;
+}

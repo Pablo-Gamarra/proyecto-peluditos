@@ -1,0 +1,39 @@
+{% extends 'base_layout.html' %}
+
+<!---->
+{% block content %}
+
+<link rel="stylesheet" type="text/css" href="../static/departamentos.css">
+
+<h3 class="titulo">Peludit@s - Canelones</h3>
+
+<div class="container1">
+    <aside>
+        <blockquote id="texto1">
+            <p>Registrá los datos de tu mascota Perdida- Encontrada - Adopción</p>
+            <p>Accede a nuestra sección "Registro Mascota" en la Barra de Navegación</p>
+        </blockquote>
+    </aside>
+
+    <aside>
+        <blockquote id="texto2">
+            <p>Ciudades</p>
+        </blockquote>
+    </aside>
+
+    <aside>
+        <blockquote id="texto3">
+            <ul class="ul">
+                <li><a href="{{ url_for('cane_canelones') }}" style="color:#fff">Canelones Ciudad</a></li>
+                <li><a href="{{ url_for('cane_laspiedras') }}" style="color:#fff">Las Piedras</a></li>
+                <li><a href="{{ url_for('cane_progreso') }}" style="color:#fff">Progreso</a></li>
+                <li><a href="{{ url_for('cane_santalucia') }}" style="color:#fff">Santa Lucía</a></li>
+            </ul>
+        </blockquote>
+    </aside>
+</div>
+
+<div class="" id="">
+</div>
+
+{% endblock %}

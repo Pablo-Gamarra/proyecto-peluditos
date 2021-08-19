@@ -1,0 +1,80 @@
+{% extends 'base_layout.html' %}
+<!--Contenido de Sección Principal-->
+{% block content %}
+
+<link rel="stylesheet" type="text/css" href="../static/veterinarias.css">
+<link rel="stylesheet" href="https://bootswatch.com/simplex/">
+<h3 class="titulo">Peludit@s - Tiendas</h3>
+
+<div class="chat-box">
+    <h4>Departamento</h4>
+
+    <form action="/enl_tiendas" method="POST" enctype="multipart/form-data">
+        <label for="Departamento"></label>
+        <select name="departamento">
+                    <option value="Artigas">Artigas</option>
+                    <option value="Canelones">Canelones</option>
+                    <option value="Cerro Largo">Cerro Largo</option>
+                    <option value="Colonia">Colonia</option>
+                    <option value="Durazno">Durazno</option>
+                    <option value="Flores">Flores</option>
+                    <option value="Florida">Florida</option>
+                    <option value="Lavalleja">Lavalleja</option>
+                    <option value="Maldonado">Maldonado</option>
+                    <option value="Montevideo">Montevideo</option>
+                    <option value="Paysandu">Paysandú</option>
+                    <option value="Río Negro">Río Negro</option>
+                    <option value="Rivera">Rivera</option>
+                    <option value="Rocha">Rocha</option>
+                    <option value="Salto">Salto</option>
+                    <option value="San Josë">San José</option>
+                    <option value="soriano">Soriano</option>
+                    <option value="Tacuarembó">Tacuarembó</option>
+                    <option value="Treinta y Tres">Treinta y Tres</option>
+                </select>
+
+        <input type="submit" value="Seleccionar">
+    </form>
+</div>
+
+<div class="container1">
+    <!--<section id="container1"> -->
+    <table class="table table-striped table-bordered bg-white table-sm">
+        <thead class="text-center">
+            <tr>
+                <td>Departamento</td>
+                <td>Ciudad</td>
+                <td>Nombre</td>
+                <td>Horario</td>
+                <td>Direccion</td>
+                <td>Telefono</td>
+                <td>Email</td>
+        </thead>
+
+        <tbody>
+            {% for item in items %}
+            <tr>
+                <td>{{ item.1 }}</td>
+                <td>{{ item.2 }}</td>
+                <td>{{ item.3 }}</td>
+                <td>{{ item.4 }}</td>
+                <td>{{ item.5 }}</td>
+                <td>{{ item.6 }}</td>
+                <td>{{ item.7 }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    </section>
+</div>
+
+<div class="container2">
+    <aside>
+        <blockquote id="texto2">
+            <ul class="ul">
+                <li><a href="{{ url_for('agre_tienda') }}" style="color:#fff">Registro Tiendas</a></li>
+            </ul>
+        </blockquote>
+    </aside>
+</div>
+{% endblock %}

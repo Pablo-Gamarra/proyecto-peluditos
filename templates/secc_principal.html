@@ -1,0 +1,46 @@
+ {% extends 'base_layout.html' %}
+<!--Contenido de Sección Principal-->
+{% block content %}
+
+<link rel="stylesheet" type="text/css" href="../static/principal.css">
+<h3 class="titulo">Bienvenidos a Nuestro Sitio Web</h3>
+
+<div class="chat-box">
+    <h1>Hola!</h1>
+    <form>
+        <label for="Tu mensaje">¿En que podemos ayudarte?</label>
+        <input type="text" placeholder="Mensaje">
+
+        <input type="submit" value="Enviar">
+    </form>
+</div>
+
+<div class="page">
+    <section id="container1">
+        <article id="texto1">
+            <p>Bienvenidos a Peludit@s el Sitio Web de las mascotas, esta pensado para los amantes de las mascotas, aquí podrás encontrar información actualizada en las diferentes Secciones. Adopciones Responsables, mascotas perdidas y encontradas. Si queres
+                aportar tu granito de arena hace click en: Donaciones. Información detallada por Departamento y Ciudad. También encontrarás nuestra sección Chat, para que tu comunicacion se directa con otros usuarios, que estén como tu visitando nuestro
+                Sitio Web.
+            </p>
+        </article>
+
+        <article id="texto1">
+            <p>
+            </p>
+        </article>
+    </section>
+    <div class="container2">
+        <aside>
+            <blockquote id="texto2">Enlaces de Interés</blockquote>
+
+            <blockquote id="texto3">
+                <ul class="ul">
+                    <li><a href="{{ url_for('enl_veterinarias') }}" style="color:#fff">Veterinarias</a></li>
+                    <li><a href="{{ url_for('enl_tiendas') }}" style="color:#fff">Tiendas</a></li>
+                    <li><a href="{{ url_for('enl_noticias') }}" style="color:#fff">Noticias</a></li>
+                </ul>
+            </blockquote>
+        </aside>
+    </div>
+</div>
+{% endblock %}

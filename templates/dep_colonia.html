@@ -1,0 +1,42 @@
+{% extends 'base_layout.html' %}
+
+<!---->
+{% block content %}
+
+<link rel="stylesheet" type="text/css" href="../static/departamentos.css">
+
+<h3 class="titulo">Peludit@s - Colonia</h3>
+
+<div class="container1">
+    <aside>
+        <blockquote id="texto1">
+            <p>Registrá los datos de tu mascota Perdida- Encontrada - Adopción</p>
+        </blockquote>
+    </aside>
+
+    <aside>
+        <blockquote id="texto2">
+            <p>Ciudades</p>
+        </blockquote>
+    </aside>
+
+    <aside>
+        <blockquote id="texto3">
+            <ul class="ul">
+                <li><a href="{{ url_for('colo_sacramento') }}" style="color:#fff">Colonia del Sacramento</a></li>
+                <li><a href="{{ url_for('colo_carmelo') }}" style="color:#fff">Carmelo</a></li>
+                <li><a href="{{ url_for('colo_juanlacaze') }}" style="color:#fff">Juan Lacaze</a></li>
+                <li><a href="{{ url_for('colo_nuevahelvecia') }}" style="color:#fff">Nueva Helveciaa</a></li>
+                <li>
+                    <a href="{{ url_for('colo_nuevapalmira') }}" style="color:#fff"></a>Nueva Palmira</li>
+                <li><a href="{{ url_for('colo_rosario') }}" style="color:#fff">Rosario</a></li>
+                <li><a href="{{ url_for('colo_tarariras') }}" style="color:#fff">Tarariras</a></li>
+            </ul>
+        </blockquote>
+    </aside>
+</div>
+
+<div class="container2">
+</div>
+
+{% endblock %}

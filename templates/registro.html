@@ -1,0 +1,24 @@
+<title>Registro</title>
+<link rel="stylesheet" type="text/css" href="../static/registro.css">
+
+
+<div class="fondo">
+</div>
+
+<div class="registro-box">
+    <img src="static/images/logo.jpg" class="avatar" alt="Avatar Image">
+    <h1>Registro</h1>
+    <form action="/reg_usuario" method="POST" enctype="multipart/form-data">
+
+        <label for="Nombre de Usuario">Nombre de usuario</label>
+        <input type="text" name="nombre" placeholder="Ingresar nombre de usuario">
+
+        <label for="Email">Email</label>
+        <input type="email" name="email" placeholder="Email">
+
+        <label for="Contraseña">Contraseña</label>
+        <input type="password" name="contraseña" placeholder="Ingresar Contraseña">
+
+        <input type="submit" value="Confirmar">
+    </form>
+</div>

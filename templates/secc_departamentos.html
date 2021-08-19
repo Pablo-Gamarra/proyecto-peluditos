@@ -1,0 +1,64 @@
+{% extends 'base_layout.html' %}
+
+<!---->
+{% block content %}
+
+<link rel="stylesheet" type="text/css" href="../static/seccion_dos.css">
+
+<h3 class="titulo">Peludit@s - Departamentos</h3>
+
+<div class="page">
+    <section id="container1">
+        <article id="texto1">
+            <h4>En Peluditos pensamos en la importancia de centralizar la información.</h4>
+            <p>!Por eso estámos contínuamente en la búsqueda de mejorar nuestro servicio y tu experiencia! </p>
+        </article>
+        <br>
+        <article id="texto1">
+            <h4>Te invitamos a segurir los siguientes pasos para mejorar tu viaje en el sitio:
+                <h4>
+        </article>
+        <br>
+        <article id="texto1">
+            <p>- Selecciona a la izquierda de la pantalla el departamento al que quieras acceder.</p>
+            <p>- Luego de seleccionado el departamento podrás ingresar en el menú a la ciudad que buscas.</p>
+            <p>- Allí verás la información ingresada por nuestros usuarios en una lista de mascotas.</p>
+            <p>- En la Barra de Navegación encontrarás entre otras, nuestra sección "Registro de Mascotas", ingresando los datos en los campos requeridos subirás la información necesaria para interactuar con otros usuarios de tu ciudad y de otras regiones
+                del país.</p>
+            <p>- En nuestra sección donaciones podés hacer efectiva tu colaboración con las diferentes entidades del país, cuya misión única es acercar la ayuda necesaria a aquellos que no tienen voz, Peludit@s perdidos, encontrados y en adopción responsable.</p>
+            <P>- Podés también comunicarte en tiempo real con otros usuarios conectados, gracias a nuestro "Chat Online".</P>
+            <p>- En los diferentes enlaces encontrarás la última información de noticias, eventos. Así como tambíen las direcciones y horarios de atención de todas las Tiendas de mascotas y Veterinarias de tu ciudad, o la que necesites. </p>
+        </article>
+    </section>
+
+    <div class="container2">
+        <aside>
+            <blockquote id="texto2">Departamentos</blockquote>
+            <blockquote id="texto3">
+                <ul class="ul">
+                    <li><a href="{{ url_for('artigas') }}" style="color:#fff">Artigas</a></li>
+                    <li><a href="{{ url_for('canelones') }}" style="color:#fff">Canelones</a></li>
+                    <li><a href="{{ url_for('cerro_largo') }}" style="color:#fff">Cerro Largo</a></li>
+                    <li><a href="{{ url_for('colonia') }}" style="color:#fff">Colonia</a></li>
+                    <li><a href="{{ url_for('durazno') }}" style="color:#fff">Durazno</a></li>
+                    <li><a href="{{ url_for('flores') }}" style="color:#fff">Flores</a></li>
+                    <li><a href="{{ url_for('florida') }}" style="color:#fff">Florida</a></li>
+                    <li><a href="{{ url_for('lavalleja') }}" style="color:#fff">Lavalleja</a></li>
+                    <li><a href="{{ url_for('maldonado') }}" style="color:#fff">Maldonado</a></li>
+                    <li><a href="{{ url_for('montevideo') }}" style="color:#fff">Montevideo</a></li>
+                    <li><a href="{{ url_for('paysandu') }}" style="color:#fff">Paysandú</a></li>
+                    <li><a href="{{ url_for('rio_negro') }}" style="color:#fff">Río Negro</a></li>
+                    <li><a href="{{ url_for('rivera') }}" style="color:#fff">Rivera</a></li>
+                    <li><a href="{{ url_for('rocha') }}" style="color:#fff">Rocha</a></li>
+                    <li><a href="{{ url_for('salto') }}" style="color:#fff">Salto</a></li>
+                    <li><a href="{{ url_for('san_jose') }}" style="color:#fff">San José</a></li>
+                    <li><a href="{{ url_for('soriano') }}" style="color:#fff">Soriano</a></li>
+                    <li><a href="{{ url_for('tacuarembo') }}" style="color:#fff">Tacuarembó</a></li>
+                    <li><a href="{{ url_for('treinta_tres') }}" style="color:#fff">Treinta y Tres</a></li>
+                </ul>
+            </blockquote>
+        </aside>
+    </div>
+</div>
+
+{% endblock %}

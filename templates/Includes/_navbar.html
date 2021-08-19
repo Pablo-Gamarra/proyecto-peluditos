@@ -1,0 +1,38 @@
+<div id="general">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Peludit@s Web</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/"><span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('principal') }}">Principal</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('mascotas') }}">Registro Mascotas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('departamentos') }}">Departamentos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('donaciones') }}">Donaciones</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('chat') }}">Chat</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('contacto') }}">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('entrar') }}">Salir</a>
+                </li>
+
+        </div>
+        </li>
+        </ul>
+
+    </nav>

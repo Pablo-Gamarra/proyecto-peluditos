@@ -1,0 +1,21 @@
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    #general {
+        margin: auto;
+        width: 1350px;
+        height: 1600px;
+        background-color: #3bc04b;
+    }
+    
+    .titulo {
+        padding-top: 15px;
+        padding-left: 15px;
+        color: #fff;
+    }
+    
+    .stripe-button {
+        text-align: centre;
+    }

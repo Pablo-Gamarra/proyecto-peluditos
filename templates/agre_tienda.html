@@ -1,0 +1,71 @@
+{% extends 'base_layout.html' %}
+<!---->
+{% block content %}
+
+<link rel="stylesheet" type="text/css" href="../static/agre_veterinaria.css">
+
+<h3 class="titulo">Peludit@s - Registro Tiendas</h3>
+
+{% with messages = get_flashed_messages() %}
+<!---->
+{% if messsages %}
+<!---->
+{% for message in messages %}
+<p>{{ message }}</p>
+{% endfor %}
+<!---->
+{% endif %}
+<!---->
+{% endwith %}
+
+<div class="reg-mascota-box">
+    <img src="static/images/logo.jpg" class="avatar" alt="Avatar Image">
+    <h1>Registrar Tienda</h1>
+
+    <form action="/agre_tienda" method="POST" enctype="multipart/form-data">
+
+        <label for="Departamento">Departamento</label>
+        <select name="departamento">
+            <option value="Artigas">Artigas</option>
+            <option value="Canelones">Canelones</option>
+            <option value="Cerro Largo">Cerro Largo</option>
+            <option value="Colonia">Colonia</option>
+            <option value="Durazno">Durazno</option>
+            <option value="Flores">Flores</option>
+            <option value="Florida">Florida</option>
+            <option value="Lavalleja">Lavalleja</option>
+            <option value="Maldonado">Maldonado</option>
+            <option value="Montevideo">Montevideo</option>
+            <option value="Paysandu">Paysandú</option>
+            <option value="Río Negro">Río Negro</option>
+            <option value="Rivera">Rivera</option>
+            <option value="Rocha">Rocha</option>
+            <option value="Salto">Salto</option>
+            <option value="San Josë">San José</option>
+            <option value="soriano">Soriano</option>
+            <option value="Tacuarembó">Tacuarembó</option>
+            <option value="Treinta y Tres">Treinta y Tres</option>
+        </select>
+
+        <label for="Ciudad">Ciudad</label>
+        <input type="text" name="ciudad" placeholder="Ingresar Ciudad">
+
+        <label for="Nombre de Vetarinaria">Nombre</label>
+        <input type="text" name="nombre" placeholder="Ingresar nombre Veterinaria">
+
+        <label for="Horario">Horario</label>
+        <input type="text" name="horario" placeholder="Horario">
+
+        <label for="Direccion">Direccion</label>
+        <input type="text" name="direccion" placeholder="Ingresar Direccion">
+
+        <label for="Telefono">Télefono Contacto</label>
+        <input type="text" name="telefono" placeholder="Télefono Contacto">
+
+        <label for="Email">Email</label>
+        <input type="email" name="email" placeholder="Email">
+
+        <input type="submit" value="Registrar">
+    </form>
+</div>
+{% endblock %}

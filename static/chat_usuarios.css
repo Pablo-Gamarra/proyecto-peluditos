@@ -1,0 +1,11 @@
+.card {
+    float: right;
+    margin-right: 400px;
+    color: black;
+    text-align: center;
+}
+
+#messages {
+    list-style: none;
+    color: blue;
+}

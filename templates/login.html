@@ -1,0 +1,27 @@
+<title>Login</title>
+<link rel="stylesheet" type="text/css" href="../static/login.css">
+
+<div class="fondo">
+</div>
+
+<div class="login-box">
+    <img src="static/images/logo.jpg" class="avatar" alt="Avatar Image">
+    <h1>Login</h1>
+
+    <form action="/login" method="POST" enctype="multipart/form-data">
+
+        <label for="Nombre de Usuario">Nombre de usuario</label>
+        <input type="text" name="nombre" placeholder="Ingresar nombre de usuario">
+
+        <label for="Email">Email</label>
+        <input type="email" name="email" placeholder="Ingresar email de usuario">
+
+        <label for="Contraseña">Contraseña</label>
+        <input type="password" name="contraseña" placeholder="Ingresar Contraseña">
+
+        <input type="submit" value="Confirmar">
+
+        <a href="{{ url_for('recuperarpass') }}">¿Olvidaste tu contraseña?</a><br>
+        <a href="{{ url_for('registro') }}">¿No tienes una cuenta?</a>
+    </form>
+</div>

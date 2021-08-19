@@ -1,0 +1,44 @@
+#texto1 {
+    margin-top: 5px;
+    padding-top: 10px;
+    padding-right: 5px;
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+}
+
+#texto2 {
+    margin-top: 5px;
+    padding-top: 20px;
+    padding-right: 10px;
+    font-size: 26px;
+    text-align: center;
+    color: #fff;
+}
+
+#texto3 {
+    margin-top: 5px;
+    padding-top: 20px;
+    padding-right: 10px;
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+}
+
+.container1 {
+    float: right;
+    width: 300px;
+    height: 700px;
+    padding-top: 15px;
+    margin-right: 30px;
+    background: rgb(19, 128, 37);
+}
+
+.container2 {
+    float: left;
+    width: 700px;
+    height: 850px;
+    padding-top: 15px;
+    margin-left: 30px;
+    background-color: rgb(32, 76, 133),
+}

@@ -1,0 +1,35 @@
+.titulo {
+    color: #fff;
+}
+
+.card1 {
+    float: left;
+    margin-top: 0;
+    margin-left: 120px;
+    color: coral;
+    text-align: left;
+}
+
+.card2 {
+    float: right;
+    margin-top: 0;
+    margin-right: 120px;
+    color: black;
+    text-align: right;
+}
+
+.card3 {
+    float: left;
+    margin-top: 15px;
+    margin-left: 120px;
+    color: darkblue;
+    text-align: left;
+}
+
+.card4 {
+    float: right;
+    margin-top: 0;
+    margin-right: 120px;
+    color: red;
+    text-align: right;
+}

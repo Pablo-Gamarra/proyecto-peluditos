@@ -1,0 +1,51 @@
+{% extends 'base_layout.html' %}
+<!---->
+{% block content %}
+
+<link rel="stylesheet" type="text/css" href="../static/editar_info_mascotas.css">
+
+<h3 class="titulo">Peludit@s - Edición Registro Mascotas</h3>
+
+<div class="reg-mascota-box">
+    <img src="../static/images/logo.jpg" class="avatar" alt="Avatar Image">
+    <h1>Editar Registro</h1>
+
+    <form action="/update/{{registro.0}}" method="POST" enctype="multipart/form-data">
+
+        <label for="Estado">Estado</label>
+        <input type="text" name="estado" value="{{ registro.1 }}">
+
+        <label for="Departamento">Departamento</label>
+        <input type="text" name="departamento" value="{{ registro.2 }}">
+
+        <label for="Ciudad">Ciudad</label>
+        <input type="text" name="ciudad" value="{{ registro.3 }}">
+
+        <label for="Especie">Especie</label>
+        <input type="text" name="especie" value="{{ registro.4 }}">
+
+        <label for="Nombre de Mascota">Nombre de la mascota</label>
+        <input type="text" name="nombre" placeholder="Ingresar nombre de la mascota" value="{{ registro.5 }}">
+
+        <label for="Tamaño">Tamaño</label>
+        <input type="text" name="tamaño" value="{{ registro.6 }}">
+
+        <label for="Peso">Peso Aproximado(kg)</label>
+        <input type="text" name="peso" value="{{ registro.7 }}">
+
+        <label for="Color">Color</label>
+        <input type="text" name="color" placeholder="Color" value="{{ registro.8 }}">
+
+        <label for="Email">Email</label>
+        <input type="email" name="email" placeholder="Email" value="{{ registro.9 }}">
+
+        <label for="Celular">Télefono Móvil</label>
+        <input type="text" name="telefono" value="{{ registro.10 }}" placeholder="Télefono Móvil">
+
+        <label for="Imagen">Seleccionar Imágen</label>
+        <input type="file" name="imagen">
+
+        <input type="submit" value="Editar">
+    </form>
+</div>
+{% endblock %}

@@ -1,0 +1,102 @@
+{% extends 'base_layout.html' %}
+<!---->
+{% block content %}
+
+<link rel="stylesheet" type="text/css" href="../static/registro_mascotas.css">
+
+<h3 class="titulo">Peludit@s - Registro Mascotas</h3>
+
+{% with messages = get_flashed_messages() %}
+<!---->
+{% if messsages %}
+<!---->
+{% for message in messages %}
+<p>{{ message }}</p>
+{% endfor %}
+<!---->
+{% endif %}
+<!---->
+{% endwith %}
+
+<div class="reg-mascota-box">
+    <img src="static/images/logo.jpg" class="avatar" alt="Avatar Image">
+    <h1>Registro de Mascotas</h1>
+
+    <form action="/agre_mascota" method="POST" enctype="multipart/form-data">
+
+        <label for="Estado">Estado</label>
+        <select name="estado">
+            <option value="Perdido">Perdido</option>
+            <option value="Encontrado">Encontrado</option>
+            <option value="Adopción">Adopción</option>
+        </select>
+
+        <label for="Departamento">Departamento</label>
+        <select name="departamento">
+            <option value="Artigas">Artigas</option>
+            <option value="Canelones">Canelones</option>
+            <option value="Cerro Largo">Cerro Largo</option>
+            <option value="Colonia">Colonia</option>
+            <option value="Durazno">Durazno</option>
+            <option value="Flores">Flores</option>
+            <option value="Florida">Florida</option>
+            <option value="Lavalleja">Lavalleja</option>
+            <option value="Maldonado">Maldonado</option>
+            <option value="Montevideo">Montevideo</option>
+            <option value="Paysandu">Paysandú</option>
+            <option value="Río Negro">Río Negro</option>
+            <option value="Rivera">Rivera</option>
+            <option value="Rocha">Rocha</option>
+            <option value="Salto">Salto</option>
+            <option value="San Josë">San José</option>
+            <option value="soriano">Soriano</option>
+            <option value="Tacuarembó">Tacuarembó</option>
+            <option value="Treinta y Tres">Treinta y Tres</option>
+        </select>
+
+        <label for="Ciudad">Ciudad</label>
+        <input type="text" name="ciudad" placeholder="Ingresar Ciudad">
+
+        <label for="Especie">Especie</label>
+        <select name="especie">
+                <option value="Perro">Perro</option>
+                <option value="Gato">Gato</option> 
+        </select>
+
+        <label for="Nombre de Mascota">Nombre de la mascota</label>
+        <input type="text" name="nombre" placeholder="Ingresar nombre de la mascota">
+
+        <label for="Tamaño">Tamaño</label>
+        <select name="tamaño">
+            <option value="Pequeño">Pequeño</option>
+            <option value="Mediano">Mediano</option>
+            <option value="Grande">Grande</option>
+        </select>
+
+        <label for="Peso">Peso Aproximado(kg)</label>
+        <select name="peso">
+            <option value="5Kgs">5Kgs</option>
+            <option value="10Kgs">10Kgs</option>
+            <option value="15Kgs">15Kgs</option>
+            <option value="20Kgs">20Kgs</option>
+            <option value="25Kgs">25Kgs</option>
+            <option value="30Kgs">30Kgs</option>
+            <option value="35Kgs">35Kgs</option>
+        </select>
+
+        <label for="Color">Color</label>
+        <input type="text" name="color" placeholder="Color">
+
+        <label for="Email">Email</label>
+        <input type="email" name="email" placeholder="Email">
+
+        <label for="Celular">Télefono Móvil</label>
+        <input type="text" name="telefono" placeholder="Télefono Móvil">
+
+        <label for="Imagen">Seleccionar Imágen</label>
+        <input type="file" name="imagen">
+
+        <input type="submit" value="Registrar">
+    </form>
+</div>
+{% endblock %}

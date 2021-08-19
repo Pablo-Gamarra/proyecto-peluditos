@@ -1,0 +1,36 @@
+{% extends 'base_layout.html' %}
+
+<!---->
+{% block content %}
+
+<link rel="stylesheet" type="text/css" href="../static/departamentos.css">
+
+<h3 class="titulo">Peludit@s - Cerro Largo</h3>
+
+<div class="container1">
+    <aside>
+        <blockquote id="texto1">
+            <p>Registrá los datos de tu mascota Perdida- Encontrada - Adopción</p>
+        </blockquote>
+    </aside>
+
+    <aside>
+        <blockquote id="texto2">
+            <p>Ciudades</p>
+        </blockquote>
+    </aside>
+
+    <aside>
+        <blockquote id="texto3">
+            <ul class="ul">
+                <li><a href="{{ url_for('cane_canelones') }}" style="color:#fff">Melo</a></li>
+
+            </ul>
+        </blockquote>
+    </aside>
+</div>
+
+<div class="container2">
+</div>
+
+{% endblock %}

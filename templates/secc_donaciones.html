@@ -1,0 +1,73 @@
+{% extends 'base_layout.html' %}
+
+<!---->
+{% block content %}
+
+<link rel="stylesheet" type="text/css" href="../static/donaciones.css">
+
+<h3 class="titulo">Peludit@s - Donaciones</h3>
+
+
+<div class="card1" style="width: 30rem;">
+
+    <div class="card-body">
+        <h5 class="card-title"></h5>
+        <p class="card-text"></p>
+
+        <h5>Gracias por tu colaboración</h5>
+        <h9 class="display-3">$250</h9>
+        <p class="lead"></p>
+        <form action="{{ url_for('donaciones') }}" method="POST">
+            <script src="https://checkout.stripe.com/checkout.js" class="stripe-button" data-key="{{ pub_key }}" data-amount="250" data-name="Peludit@s" data-description="Widget" data-image="https://stripe.com/img/documentation/checkout/marketplace.png" data-local="auto">
+            </script>
+
+    </div>
+</div>
+
+
+<div class="card2" style="width: 30rem;">
+
+    <div class="card-body">
+
+        <p class="card-text"></p>
+
+        <h5>Gracias por tu colaboración</h5>
+        <h9 class="display-3">$500</h9>
+        <p class="lead"></p>
+        <form action="/your-server-side-code" method="POST">
+            <script src="https://checkout.stripe.com/checkout.js" class="stripe-button" data-key="{{ pub_key }}" data-amount="500" data-name="Peludit@s" data-description="Widget" data-image="https://stripe.com/img/documentation/checkout/marketplace.png" data-local="auto"></script>
+
+    </div>
+</div>
+
+<div class="card3" style="width: 30rem;">
+
+    <div class="card-body">
+
+        <p class="card-text"></p>
+
+        <h5>Gracias por tu colaboración</h5>
+        <h9 class="display-3">$750</h9>
+        <p class="lead"></p>
+        <form action="/your-server-side-code" method="POST">
+            <script src="https://checkout.stripe.com/checkout.js" class="stripe-button" data-key="{{ pub_key }}" data-amount="750" data-name="Peludit@s" data-description="Widget" data-image="https://stripe.com/img/documentation/checkout/marketplace.png" data-local="auto"></script>
+
+    </div>
+</div>
+
+<div class="card4" style="width: 30rem;">
+
+    <div class="card-body">
+
+        <p class="card-text"></p>
+
+        <h5>Gracias por tu colaboración</h5>
+        <h9 class="display-3">$1000</h9>
+        <p class="lead"></p>
+        <form action="/your-server-side-code" method="POST">
+            <script src="https://checkout.stripe.com/checkout.js" class="stripe-button" data-key="{{ pub_key }}" data-amount="1000" data-name="Peludit@s" data-description="Widget" data-image="https://stripe.com/img/documentation/checkout/marketplace.png" data-local="auto"></script>
+
+    </div>
+</div>
+
+{% endblock %}

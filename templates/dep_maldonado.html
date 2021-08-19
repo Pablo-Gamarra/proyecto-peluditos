@@ -1,0 +1,35 @@
+{% extends 'base_layout.html' %}
+
+<!---->
+{% block content %}
+
+<link rel="stylesheet" type="text/css" href="../static/departamentos.css">
+
+<h3 class="titulo">Peludit@s - Maldonado</h3>
+
+<div class="page">
+    <section id="container1">
+        <article id="texto1">
+            <p>Este Sitio Web
+            </p>
+        </article>
+
+        <article id="texto1">
+            <p>Este Sitio Web esta pensado
+
+            </p>
+        </article>
+    </section>
+    <div class="container2">
+        <aside>
+            <blockquote id="texto3">
+                <ul class="ul">
+                    <li><a href="{{ url_for('pagina_uno') }}" style="color:#fff">Página 1</a></li>
+
+                </ul>
+            </blockquote>
+        </aside>
+    </div>
+</div>
+
+{% endblock %}
